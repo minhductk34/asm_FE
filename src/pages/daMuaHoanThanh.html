@@ -1,0 +1,83 @@
+<section>
+  <div class="menu" ng-include="'layout/menuClient.html'"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <nav class="navbar navbar-expand-lg border-bottom border-warning">
+          <div class="container-fluid header_dow">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link me-3 menu-detail"
+                    aria-current="page"
+                    href="#daMua"
+                    >Tất cả</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3 menu-detail" href="#choThanhToan"
+                    >Chờ thanh toán</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3 menu-detail" href="#hoanThanh"
+                    >Hoàn thành</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <h4 class="text-center">Đã thanh toán</h4>
+
+    <table class="table">
+      <tbody>
+        <tr ng-repeat="sp in spHoanThanh">
+          <th>
+            <img
+              src="../assets/image/{{sp.image}}"
+              class="img-fluid rounded mx-auto d-block"
+              alt="..."
+              style="width: 100px"
+            />
+          </th>
+          <td>
+            <h5 class="mt-4">{{sp.name}}</h5>
+            <p>{{sp.description}}</p>
+          </td>
+          <td>
+            <p class="mt-5 text-danger mb-2 fw-bold">$ {{sp.price}}</p>
+          </td>
+          <td><p class="mt-5">{{sp.soLuong}}</p></td>
+          <td>
+            <p class="mt-5 text-danger mb-2 fw-bold">đ {{sp.thanhTien}}VND</p>
+          </td>
+          <td>
+            <a
+              class="btn btn-danger mt-5"
+              href="#muaHang"
+              ng-click="muaLai($event, $index)"
+              ><i class="fa-solid fa-cart-shopping"></i> Mua lại</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

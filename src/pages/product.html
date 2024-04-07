@@ -1,0 +1,157 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div ng-include="'layout/menuAdmin.html'"></div>
+      </div>
+
+      <div class="col-10">
+        <h4 class="text-center mt-4 mb-5">Product Manager</h4>
+
+        <form class="row g-3">
+          <!-- id -->
+          <div class="col-md-6">
+            <label for="Id" class="form-label">ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Id"
+              ng-model="form_Products.id"
+            />
+          </div>
+          <!-- name -->
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              ng-model="form_Products.name"
+            />
+          </div>
+          <!-- price -->
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Price</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputCity"
+              ng-model="form_Products.price"
+            />
+          </div>
+          <!-- category -->
+          <div class="col-md-6">
+            <label for="inputCategory" class="form-label">Category</label>
+            <select
+              id="inputCategory"
+              class="form-select"
+              ng-model="form_Products.category"
+            >
+              <option ng-repeat="item in categorySP" value="{{item.name}}">
+                {{item.name}}
+              </option>
+            </select>
+          </div>
+
+          <!-- describe -->
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">describe</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              ng-model="form_Products.description"
+            />
+          </div>
+          <!-- image -->
+          <div class="col-md-3">
+            <label for="inputImage" class="form-label">Image</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputImage"
+              ng-model="form_Products.image"
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="inputImage" class="form-label">Số lượng</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputImage"
+              ng-model="form_Products.soLuong"
+            />
+          </div>
+
+          <!-- add -->
+          <div class="col-6 text-center mt-5">
+            <a
+              type="submit"
+              class="btn btn-warning"
+              style="min-width: 100px"
+              ng-click="addProducts($event)"
+              href="#product/add"
+            >
+              Add
+            </a>
+          </div>
+          <!-- update -->
+          <div class="col-6 text-center mt-5">
+            <a
+              type="submit"
+              class="btn btn-success"
+              style="min-width: 100px"
+              ng-click="updateProducts($event)"
+              href="#product/{{form_Products.id}}/add"
+            >
+              Update
+            </a>
+          </div>
+
+          <!-- table -->
+          <div class="row mt-5">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Category</th>
+                  <th>Số lượng</th>
+                  <th>Descride</th>
+                  <th>Image</th>
+                  <th>Function</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="p in products">
+                  <td>{{$index + 1}}</td>
+                  <td>{{p.id}}</td>
+                  <td>{{p.name}}</td>
+                  <td>{{p.price}}</td>
+                  <td>{{p.category}}</td>
+                  <td>{{p.soLuong}}</td>
+                  <td>{{p.description}}</td>
+                  <td>{{p.image}}</td>
+                  <td>
+                    <a
+                      href="#products/{{p.id}}/remove"
+                      ng-click="removesProducts($event, $index)"
+                      ><i class="fa-solid fa-trash"></i
+                    ></a>
+                    <a
+                      href="#products/{{p.id}}/detail"
+                      ng-click="detailProducts($event, $index)"
+                      ><i class="fa-solid fa-pen"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

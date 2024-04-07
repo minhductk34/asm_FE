@@ -1,0 +1,120 @@
+<section>
+  <div class="menu" ng-include="'layout/menuClient.html'"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 mt-5">
+        <div class="card" style="width: 100%">
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham">Tất cả</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Canon">Canon</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Nikon">Nikon</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/SamSung">SamSung</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Sony">Sony</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-10 col-md-9 col-sm-8 mt-5">
+        <div class="border-bottom border-warning mb-3" style="max-width: 80%">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../assets/image/{{detail.image}}"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{detail.name}}</h5>
+                <p class="card-text">{{detail.description}}</p>
+                <h5>Còn: {{detail.soLuong}}</h5>
+
+                <h5 class="card-text mt-3 text-danger mb-2 fw-bold">
+                  $ {{detail.price}}
+                </h5>
+
+                <div class="row mx-auto mt-4">
+                  <div class="col-3">
+                    <div class="input-group mb-3" style="height: 30px">
+                      <span class="input-group-text" style="height: 30px"
+                        ><a class="nav-link" href="" ng-click="congSl($event)"
+                          >+</a
+                        ></span
+                      >
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Amount (to the nearest dollar)"
+                        style="height: 30px"
+                        ng-model="soLuong"
+                      />
+                      <span class="input-group-text" style="height: 30px"
+                        ><a class="nav-link" href="" ng-click="truSl($event)"
+                          >-</a
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a
+                    class="btn btn-warning"
+                    type="button"
+                    href="#gioHang"
+                    ng-click="addGioHang($event)"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                  </a>
+                  <a
+                    class="btn btn-danger"
+                    type="button"
+                    href="#muaHang"
+                    ng-click="muaNgay($event)"
+                    >Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h6 class="mt-4 border-bottom border-dark">Sản phẩm tương tự</h6>
+        <div class="row mt-4">
+          <div class="col-2" ng-repeat="sp in sanPham">
+            <div class="border-bottom border-warning" style="width: 100%">
+              <a ng-click="detail($index)" href="#sanPham/detail/{{sp.id}}">
+                <img
+                  src="../assets/image/{{sp.image}}"
+                  class="card-img-top image-style"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">{{sp.name}}</h5>
+                <p class="card-text mt-2 text-danger mb-2 fw-bold">
+                  $ {{sp.price}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

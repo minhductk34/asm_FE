@@ -1,0 +1,47 @@
+<div class="menu" ng-include="'layout/menuClient.html'"></div>
+
+<div class="container">
+  <h4 class="text-center">Giỏ hàng</h4>
+
+  <table class="table">
+    <tbody>
+      <tr ng-repeat="sp in sanPham">
+        <th>
+          <input class="form-check-input mt-4" type="checkbox" value="" />
+        </th>
+        <th>
+          <img
+            src="../assets/image/{{sp.image}}"
+            class="img-fluid rounded mx-auto d-block"
+            alt="..."
+            style="width: 100px"
+          />
+        </th>
+        <td>
+          <h5 class="mt-4">{{sp.name}}</h5>
+          <p>{{sp.description}}</p>
+        </td>
+        <td><p class="mt-5 text-danger mb-2 fw-bold">$ {{sp.price}}</p></td>
+        <td><p class="mt-5">{{sp.soLuong}}</p></td>
+        <td><p class="mt-5">Thành tiền</p></td>
+        <td>
+          <a
+            href=""
+            class="btn btn-danger mt-5"
+            ng-click="removeGioHang($event, $index)"
+            ><i class="fa-solid fa-delete-left"></i
+          ></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row text-center">
+    <div class="col-10"></div>
+    <div class="col-2">
+      <a class="btn btn-success" href="#">
+        <i class="fa-solid fa-cart-plus"></i> Mua hàng
+      </a>
+    </div>
+  </div>
+</div>

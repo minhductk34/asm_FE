@@ -1,0 +1,42 @@
+/* Header */
+.header_dow {
+  color: #fff;
+  height: 60px;
+}
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.icon-giohang {
+  font-size: 26px;
+  color: #000;
+}
+
+.menu-detail {
+  color: #000;
+}
+
+.menu-detail:hover {
+  color: red;
+}
+
+.input-search {
+  width: 100px;
+}
+
+/* body main */
+.image-style {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.ficon {
+  font-size: 22px;
+}

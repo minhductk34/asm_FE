@@ -1,0 +1,91 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div ng-include="'layout/menuAdmin.html'"></div>
+    </div>
+
+    <div class="col-10">
+      <h4 class="text-center mt-4 mb-5">Category Manager</h4>
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="Id" class="form-label">ID</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Id"
+            ng-model="form_Category.id"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            ng-model="form_Category.name"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4 text-center mt-5">
+            <a
+              type="submit"
+              class="btn btn-warning"
+              style="min-width: 100px"
+              ng-click="addCategory($event)"
+              href="#category/add"
+            >
+              Add
+            </a>
+          </div>
+          <div class="col-4 text-center mt-5">
+            <a
+              type="submit"
+              class="btn btn-success"
+              style="min-width: 100px"
+              ng-click="updateCategory($event)"
+              href="#category/{{form_Category.id}}/update"
+            >
+              Update
+            </a>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <div class="row mt-5">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="c in category">
+                <td>{{$index + 1}}</td>
+                <td>{{c.id}}</td>
+                <td>{{c.name}}</td>
+                <td>
+                  <a
+                    href="#category/{{c.id}}/remove"
+                    ng-click="removesCategory($event, $index)"
+                    ><i class="fa-solid fa-trash"></i
+                  ></a>
+                  <a
+                    href="#category/{{c.id}}/detail"
+                    ng-click="detailCategory($event, $index)"
+                    ><i class="fa-solid fa-pen"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

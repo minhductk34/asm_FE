@@ -1,0 +1,50 @@
+<div class="menu" ng-include="'layout/menuClient.html'"></div>
+
+<div class="container">
+  <h4 class="text-center">Mua Hàng</h4>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>
+          <img
+            src="../assets/image/{{muaNgay.image}}"
+            class="img-fluid rounded mx-auto d-block"
+            alt="..."
+            style="width: 100px"
+          />
+        </th>
+        <td>
+          <h5 class="mt-4">{{muaNgay.name}}</h5>
+          <p>{{muaNgay.description}}</p>
+        </td>
+        <td>
+          <p class="mt-5 text-danger mb-2 fw-bold">$ {{muaNgay.price}}</p>
+        </td>
+        <td>
+          <p class="mt-5">{{muaNgay.soLuong}}</p>
+        </td>
+        <td>
+          <p class="mt-5 text-danger mb-2 fw-bold">
+            đ {{muaNgay.thanhTien}}VND
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row text-center">
+    <div class="col-6"></div>
+    <div class="col-4">
+      Tổng thanh toán:
+      <spam class="mt-5 text-danger mb-2 fw-bold"
+        >đ {{muaNgay.thanhTien}}VND</spam
+      >
+    </div>
+    <div class="col-2">
+      <a class="btn btn-warning" href="#thanhToan" ng-click="thanhToan($event)"
+        >Thanh toán
+      </a>
+    </div>
+  </div>
+</div>

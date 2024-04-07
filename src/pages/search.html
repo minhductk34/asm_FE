@@ -1,0 +1,58 @@
+<section>
+  <div class="menu" ng-include="'layout/menuClient.html'"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 mt-5">
+        <div class="card" style="width: 100%">
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham">Tất cả</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Canon">Canon</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Nikon">Nikon</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/SamSung">SamSung</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#sanPham/Sony">Sony</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-10 col-md-9 col-sm-8">
+        <h3 class="mt-3 border-bottom border-muted">Sản phẩm</h3>
+
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 mt-4"
+            ng-repeat="sp in sanPhamSearch"
+          >
+            <div class="border-bottom border-warning" style="width: 100%">
+              <a ng-click="detail($index)" href="#sanPham/detail/{{sp.id}}">
+                <img
+                  src="../assets/image/{{sp.image}}"
+                  class="card-img-top image-style"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title mt-3">{{sp.name}}</h5>
+                <p class="card-text mt-2 text-danger mb-2 fw-bold">
+                  $ {{sp.price}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

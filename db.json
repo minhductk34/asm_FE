@@ -1,0 +1,423 @@
+{
+  "products": [
+    {
+      "id": "sp01",
+      "name": "Máy ảnh Canon 1",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon1.jpg",
+      "soLuong": "10"
+    },
+    {
+      "id": "sp02",
+      "name": "Máy ảnh Canon2",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon2.jpg",
+      "soLuong": "20"
+    },
+    {
+      "id": "sp03",
+      "name": "Máy ảnh Canon 3",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon3.jpg",
+      "soLuong": "11"
+    },
+    {
+      "id": "sp04",
+      "name": "Máy ảnh Canon 4",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon4.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp05",
+      "name": "Máy ảnh Canon 5",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon5.jpg",
+      "soLuong": "12"
+    },
+    {
+      "id": "sp06",
+      "name": "Máy ảnh Canon 6",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon6.png",
+      "soLuong": "13"
+    },
+    {
+      "id": "sp07",
+      "name": "Máy ảnh Canon 7",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon7.jpg",
+      "soLuong": "11"
+    },
+    {
+      "id": "sp08",
+      "name": "Máy ảnh Canon 8",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon8.jpg",
+      "soLuong": "12"
+    },
+    {
+      "id": "sp09",
+      "name": "Máy ảnh Canon 9",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon9.jpg",
+      "soLuong": "12"
+    },
+    {
+      "id": "sp10",
+      "name": "Máy ảnh Nikon1",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon1.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp11",
+      "name": "Máy ảnh Nikon2",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon2.jpg",
+      "soLuong": "11"
+    },
+    {
+      "id": "sp12",
+      "name": "Máy ảnh Nikon3",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon6.jpg",
+      "soLuong": "45"
+    },
+    {
+      "id": "sp13",
+      "name": "Máy ảnh Nikon4",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon4.jpg",
+      "soLuong": "12"
+    },
+    {
+      "id": "sp14",
+      "name": "Máy ảnh Nikon5",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon5.jpg",
+      "soLuong": "23"
+    },
+    {
+      "id": "sp15",
+      "name": "Máy ảnh Nikon6",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon6.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp16",
+      "name": "Máy ảnh Nikon7",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon7.jpg",
+      "soLuong": "6"
+    },
+    {
+      "id": "sp17",
+      "name": "Máy ảnh Nikon8",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon8.jpg",
+      "soLuong": "4"
+    },
+    {
+      "id": "sp18",
+      "name": "Máy ảnh Nikon9",
+      "price": 230000,
+      "category": "Nikon",
+      "description": "máy ảnh nikon",
+      "image": "nikon9.jpg",
+      "soLuong": "4"
+    },
+    {
+      "id": "sp19",
+      "name": "Máy ảnh SamSung1",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung1.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp20",
+      "name": "Máy ảnh SamSung2",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung2.jpg",
+      "soLuong": "12"
+    },
+    {
+      "id": "sp21",
+      "name": "Máy ảnh SamSung3",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung3.jpg",
+      "soLuong": "11"
+    },
+    {
+      "id": "sp22",
+      "name": "Máy ảnh SamSung4",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung5.jpg",
+      "soLuong": "6"
+    },
+    {
+      "id": "sp23",
+      "name": "Máy ảnh SamSung5",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung5.jpg",
+      "soLuong": "7"
+    },
+    {
+      "id": "sp24",
+      "name": "Máy ảnh SamSung6",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung6.jpg",
+      "soLuong": "8"
+    },
+    {
+      "id": "sp25",
+      "name": "Máy ảnh SamSung7",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung7.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp26",
+      "name": "Máy ảnh SamSung8",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung8.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp27",
+      "name": "Máy ảnh SamSung9",
+      "price": 450000,
+      "category": "SamSung",
+      "description": "máy ảnh samsung",
+      "image": "samsung9.jpg",
+      "soLuong": "6"
+    },
+    {
+      "id": "sp28",
+      "name": "Máy ảnh Sony1",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony1.jpg",
+      "soLuong": "4"
+    },
+    {
+      "id": "sp29",
+      "name": "Máy ảnh Sony2",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony2.jpg",
+      "soLuong": "5"
+    },
+    {
+      "id": "sp30",
+      "name": "Máy ảnh Sony3",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony3.jpg",
+      "soLuong": "4"
+    },
+    {
+      "id": "sp31",
+      "name": "Máy ảnh Sony4",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony4.jpg",
+      "soLuong": "6"
+    },
+    {
+      "id": "sp32",
+      "name": "Máy ảnh Sony5",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony5.jpg",
+      "soLuong": "7"
+    },
+    {
+      "id": "sp33",
+      "name": "Máy ảnh Sony6",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony6.jpg",
+      "soLuong": "8"
+    },
+    {
+      "id": "sp34",
+      "name": "Máy ảnh Sony7",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony7.jpg",
+      "soLuong": "7"
+    },
+    {
+      "id": "sp35",
+      "name": "Máy ảnh Sony8",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony8.jpg",
+      "soLuong": "7"
+    },
+    {
+      "id": "sp36",
+      "name": "Máy ảnh Sony9",
+      "price": 380000,
+      "category": "Sony",
+      "description": "máy ảnh sony",
+      "image": "sony9.jpg",
+      "soLuong": "9"
+    }
+  ],
+  "category": [
+    {
+      "id": "C01",
+      "name": "Canon"
+    },
+    {
+      "id": "C02",
+      "name": "Nikon"
+    },
+    {
+      "id": "C03",
+      "name": "SamSung"
+    },
+    {
+      "id": "C04",
+      "name": "Sony"
+    }
+  ],
+  "account": [
+    
+    {
+      "id": "",
+      "name": "Minh Duc Dep Trai",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "123455",
+      "chucVu": true
+    }
+  ],
+  "gioHang": [
+    {
+      "id": "sp01",
+      "name": "Máy ảnh Canon 1",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon1.jpg",
+      "soLuong": 3
+    },
+    {
+      "id": "sp03",
+      "name": "Máy ảnh Canon 3",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon3.jpg",
+      "soLuong": 2
+    }
+  ],
+  "banHang": [
+    {
+      "id": "sp01",
+      "name": "Máy ảnh Canon 1",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon1.jpg",
+      "soLuong": 3,
+      "thanhTien": 360000,
+      "trangThai": false
+    },
+    {
+      "id": "2ANTzjr",
+      "name": "Máy ảnh Canon 1",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon1.jpg",
+      "soLuong": 1,
+      "thanhTien": 120000,
+      "trangThai": true
+    },
+    {
+      "id": "Q1ULjcZ",
+      "name": "Máy ảnh Canon 3",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon3.jpg",
+      "soLuong": 1,
+      "thanhTien": 120000,
+      "trangThai": false
+    },
+    {
+      "id": "-VfIaIu",
+      "name": "Máy ảnh Canon2",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon2.jpg",
+      "soLuong": 1,
+      "thanhTien": 120000,
+      "trangThai": false
+    }
+  ]
+}
