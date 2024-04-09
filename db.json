@@ -344,34 +344,88 @@
     }
   ],
   "account": [
-    
     {
-      "id": "",
+      "id": "1",
       "name": "Minh Duc Dep Trai",
       "user": "ducnm",
       "password": "12345",
       "sdt": "123455",
       "chucVu": true
+    },
+    {
+      "id": "",
+      "name": "Minh Đức",
+      "user": "minhductk34",
+      "password": "12345",
+      "sdt": "12345",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "Minh Duc",
+      "user": "ducnmph",
+      "password": "12345",
+      "sdt": "123455",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "Minh Duc",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "12345",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "Minh Duc",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "12345",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "Minh Duc",
+      "user": "ducnm",
+      "password": "dd",
+      "sdt": "12345",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "minhduc",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "123455",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "minhduc",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "12345",
+      "chucVu": false
+    },
+    {
+      "id": "",
+      "name": "Minh Duc",
+      "user": "ducnm",
+      "password": "12345",
+      "sdt": "12345",
+      "chucVu": false
     }
   ],
   "gioHang": [
     {
-      "id": "sp01",
-      "name": "Máy ảnh Canon 1",
+      "id": "sp02",
+      "name": "Máy ảnh Canon2",
       "price": 120000,
       "category": "Canon",
       "description": "máy ảnh canon",
-      "image": "canon1.jpg",
-      "soLuong": 3
-    },
-    {
-      "id": "sp03",
-      "name": "Máy ảnh Canon 3",
-      "price": 120000,
-      "category": "Canon",
-      "description": "máy ảnh canon",
-      "image": "canon3.jpg",
-      "soLuong": 2
+      "image": "canon2.jpg",
+      "soLuong": 1
     }
   ],
   "banHang": [
@@ -415,6 +469,28 @@
       "category": "Canon",
       "description": "máy ảnh canon",
       "image": "canon2.jpg",
+      "soLuong": 1,
+      "thanhTien": 120000,
+      "trangThai": false
+    },
+    {
+      "id": "",
+      "name": "Máy ảnh Canon 6",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon6.png",
+      "soLuong": 1,
+      "thanhTien": 120000,
+      "trangThai": false
+    },
+    {
+      "id": "",
+      "name": "Máy ảnh Canon 4",
+      "price": 120000,
+      "category": "Canon",
+      "description": "máy ảnh canon",
+      "image": "canon4.jpg",
       "soLuong": 1,
       "thanhTien": 120000,
       "trangThai": false

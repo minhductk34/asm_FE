@@ -5,7 +5,7 @@ window.account_Controller = function ($scope, $http) {
     user: "",
     password: "",
     sdt: "",
-    chucVu: true,
+    chucVu: false,
   };
 
   $scope.confirmDangKy = "";
@@ -29,14 +29,14 @@ window.account_Controller = function ($scope, $http) {
       "?user=" +
       $scope.form_account.user +
       "&password=" +
-      $scope.form_account.password +
-      "&chucVu=" +
-      $scope.form_account.chucVu;
+      $scope.form_account.password
+      
 
     $http.get(api).then(function (response) {
       if (response.statusText === "OK") {
         $scope.acc = response.data;
       }
+      console.log($scope.acc)
 
       if ($scope.acc.length == 0) {
         alert("Đăng nhập không thành công");
@@ -90,7 +90,9 @@ window.account_Controller = function ($scope, $http) {
     }
 
     $http.post(accountAPI, $scope.form_account).then(function () {
+     
       alert("Đăng ký thành công");
+
     });
   };
 };
