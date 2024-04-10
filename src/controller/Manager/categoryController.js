@@ -1,6 +1,6 @@
 window.category_Controller = function ($scope, $http) {
   $scope.form_Category = {
-    id: "",
+
     name: "",
   };
 

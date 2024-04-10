@@ -1,11 +1,10 @@
 window.account_Controller = function ($scope, $http) {
   $scope.form_account = {
-    id: "",
     name: "",
     user: "",
     password: "",
     sdt: "",
-    chucVu: false,
+    chucVu: "client",
   };
 
   $scope.confirmDangKy = "";
@@ -30,25 +29,27 @@ window.account_Controller = function ($scope, $http) {
       $scope.form_account.user +
       "&password=" +
       $scope.form_account.password
-      
 
-    $http.get(api).then(function (response) {
-      if (response.statusText === "OK") {
-        $scope.acc = response.data;
-      }
-      console.log($scope.acc)
 
-      if ($scope.acc.length == 0) {
-        alert("Đăng nhập không thành công");
-        return false;
-      }
+    $http.get(api)
+      .then(function (response) {
+        if (response.statusText !== "OK" || response.data.length === 0) {
+          alert("Đăng nhập không thành công");
+          return false;
+        }
 
-      if ($scope.form_account.chucVu) {
-        window.location = "#product";
-      } else {
-        window.location = "#trangChu";
-      }
-    });
+        var userData = response.data[0];
+        localStorage.setItem("id", userData.id);
+        localStorage.setItem("user", userData.user);
+
+        if (userData.chucVu === "admin") {
+          alert("Đăng nhập thành công");
+          window.location = "#product";
+        } else if (userData.chucVu === "client") {
+          window.location = "#trangChu";
+        }
+      });
+
   };
 
   $scope.dangKy = function (event) {
@@ -90,9 +91,15 @@ window.account_Controller = function ($scope, $http) {
     }
 
     $http.post(accountAPI, $scope.form_account).then(function () {
-     
+
       alert("Đăng ký thành công");
 
     });
   };
+  $scope.dangXuat = function () {
+    localStorage.removeItem("id", userData.id);
+    localStorage.removeItem("user", userData.user)
+    window.location = "#dangNhap"
+
+  }
 };

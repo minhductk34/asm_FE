@@ -1,22 +1,12 @@
 {
   "products": [
     {
-      "id": "sp01",
-      "name": "Máy ảnh Canon 1",
-      "price": 120000,
-      "category": "Canon",
-      "description": "máy ảnh canon",
-      "image": "canon1.jpg",
-      "soLuong": "10"
-    },
-    {
-      "id": "sp02",
       "name": "Máy ảnh Canon2",
-      "price": 120000,
       "category": "Canon",
       "description": "máy ảnh canon",
       "image": "canon2.jpg",
-      "soLuong": "20"
+      "soLuong": "20",
+      "id": "sp02"
     },
     {
       "id": "sp03",
@@ -323,6 +313,22 @@
       "description": "máy ảnh sony",
       "image": "sony9.jpg",
       "soLuong": "9"
+    },
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "soLuong": ""
+    },
+    {
+      "name": "11",
+      "category": "Canon",
+      "image": "11",
+      "soLuong": "11",
+      "id": "7bbc"
     }
   ],
   "category": [
@@ -346,85 +352,53 @@
   "account": [
     {
       "id": "1",
-      "name": "Minh Duc Dep Trai",
-      "user": "ducnm",
-      "password": "12345",
-      "sdt": "123455",
-      "chucVu": true
-    },
-    {
-      "id": "",
       "name": "Minh Đức",
       "user": "minhductk34",
       "password": "12345",
       "sdt": "12345",
-      "chucVu": false
+      "chucVu": "admin"
     },
     {
-      "id": "",
-      "name": "Minh Duc",
-      "user": "ducnmph",
-      "password": "12345",
-      "sdt": "123455",
-      "chucVu": false
-    },
-    {
-      "id": "",
-      "name": "Minh Duc",
+      "id": "122",
+      "name": "Minh Duc Dep Trai",
       "user": "ducnm",
-      "password": "12345",
-      "sdt": "12345",
-      "chucVu": false
+      "password": "111",
+      "sdt": "4444444",
+      "chucVu": "admin"
     },
     {
       "id": "",
-      "name": "Minh Duc",
-      "user": "ducnm",
-      "password": "12345",
-      "sdt": "12345",
-      "chucVu": false
+      "name": "",
+      "user": "",
+      "password": "",
+      "sdt": "",
+      "chucVu": ""
     },
     {
       "id": "",
-      "name": "Minh Duc",
-      "user": "ducnm",
-      "password": "dd",
-      "sdt": "12345",
-      "chucVu": false
+      "name": "",
+      "user": "",
+      "password": "",
+      "sdt": "",
+      "chucVu": ""
     },
     {
-      "id": "",
-      "name": "minhduc",
-      "user": "ducnm",
-      "password": "12345",
-      "sdt": "123455",
-      "chucVu": false
-    },
-    {
-      "id": "",
-      "name": "minhduc",
-      "user": "ducnm",
-      "password": "12345",
-      "sdt": "12345",
-      "chucVu": false
-    },
-    {
-      "id": "",
-      "name": "Minh Duc",
-      "user": "ducnm",
-      "password": "12345",
-      "sdt": "12345",
-      "chucVu": false
+      "id": "bbf0",
+      "name": "Minh Duc Dep Trai",
+      "user": "izone",
+      "password": "123456",
+      "sdt": "4444444",
+      "chucVu": "admin"
     }
   ],
   "gioHang": [
     {
-      "id": "sp02",
-      "name": "Máy ảnh Canon2",
+      "id": "sp05",
+      "name": "Máy ảnh Canon 5",
       "price": 120000,
       "category": "Canon",
       "description": "máy ảnh canon",
-      "image": "canon2.jpg",
+      "image": "canon5.jpg",
       "soLuong": 1
     }
   ],
@@ -449,10 +423,10 @@
       "image": "canon1.jpg",
       "soLuong": 1,
       "thanhTien": 120000,
-      "trangThai": true
+      "trangThai": false
     },
     {
-      "id": "Q1ULjcZ",
+      "id": "",
       "name": "Máy ảnh Canon 3",
       "price": 120000,
       "category": "Canon",
@@ -463,7 +437,7 @@
       "trangThai": false
     },
     {
-      "id": "-VfIaIu",
+      "id": "",
       "name": "Máy ảnh Canon2",
       "price": 120000,
       "category": "Canon",
@@ -475,22 +449,22 @@
     },
     {
       "id": "",
-      "name": "Máy ảnh Canon 6",
+      "name": "Máy ảnh Canon 5",
       "price": 120000,
       "category": "Canon",
       "description": "máy ảnh canon",
-      "image": "canon6.png",
+      "image": "canon5.jpg",
       "soLuong": 1,
       "thanhTien": 120000,
       "trangThai": false
     },
     {
       "id": "",
-      "name": "Máy ảnh Canon 4",
+      "name": "Máy ảnh Canon2",
       "price": 120000,
       "category": "Canon",
       "description": "máy ảnh canon",
-      "image": "canon4.jpg",
+      "image": "canon2.jpg",
       "soLuong": 1,
       "thanhTien": 120000,
       "trangThai": false

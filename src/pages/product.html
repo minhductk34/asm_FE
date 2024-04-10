@@ -9,101 +9,75 @@
         <h4 class="text-center mt-4 mb-5">Product Manager</h4>
 
         <form class="row g-3">
+          <div>
+
+          </div>
           <!-- id -->
           <div class="col-md-6">
             <label for="Id" class="form-label">ID</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Id"
-              ng-model="form_Products.id"
-            />
+            <input type="text" class="form-control" id="Id" ng-model="form_Products.id" ng-required="true"
+              name="inputId" readonly />
           </div>
+
           <!-- name -->
           <div class="col-md-6">
             <label for="name" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              ng-model="form_Products.name"
-            />
+            <input type="text" class="form-control" id="name" ng-model="form_Products.name" ng-required="true"
+              name="inputName" />
+            <span ng-show="validate.name" style="color: red;"> Tên không được để trống</span>
           </div>
+
           <!-- price -->
           <div class="col-md-6">
             <label for="inputCity" class="form-label">Price</label>
-            <input
-              type="number"
-              class="form-control"
-              id="inputCity"
-              ng-model="form_Products.price"
-            />
+            <input type="number" class="form-control" id="inputCity" ng-model="form_Products.price" ng-required="true"
+              min="0" name="inputPrice" />
+            <span ng-show="validate.price" style="color: red;"> Giá không được để trống</span>
           </div>
           <!-- category -->
           <div class="col-md-6">
             <label for="inputCategory" class="form-label">Category</label>
-            <select
-              id="inputCategory"
-              class="form-select"
-              ng-model="form_Products.category"
-            >
+            <select id="inputCategory" class="form-select" ng-model="form_Products.category" ng-required="true"
+              name="inputCategory">
               <option ng-repeat="item in categorySP" value="{{item.name}}">
                 {{item.name}}
               </option>
             </select>
+
           </div>
 
           <!-- describe -->
           <div class="col-md-6">
-            <label for="inputAddress" class="form-label">describe</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              ng-model="form_Products.description"
-            />
+            <label for="inputAddress" class="form-label">Describe</label>
+            <input type="text" class="form-control" id="inputAddress" ng-model="form_Products.description"
+              ng-required="true" name="inputDescription" />
+            <span ng-show="validate.name" style="color: red;">Tên không được để trống</span>
           </div>
           <!-- image -->
           <div class="col-md-3">
             <label for="inputImage" class="form-label">Image</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputImage"
-              ng-model="form_Products.image"
-            />
+            <input type="text" class="form-control" id="inputImage" ng-model="form_Products.image" name="inputImage" />
           </div>
           <div class="col-md-3">
-            <label for="inputImage" class="form-label">Số lượng</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputImage"
-              ng-model="form_Products.soLuong"
-            />
+            <label for="inputSoLuong" class="form-label">Số lượng</label>
+            <input type="text" class="form-control" id="inputSoLuong" ng-model="form_Products.soLuong"
+              name="inputSoLuong" />
+            <span ng-show="validate.soLuong" style="color: red;"> Số lượng không được để trống</span> 
           </div>
+
 
           <!-- add -->
           <div class="col-6 text-center mt-5">
-            <a
-              type="submit"
-              class="btn btn-warning"
-              style="min-width: 100px"
-              ng-click="addProducts($event)"
-              href="#product/add"
-            >
+            <a type="submit" class="btn btn-warning" style="min-width: 100px" ng-click="addProducts($event)"
+              ng-disabled="productForm.$invalid || checkEmptyFields()" href="#product/add">
               Add
             </a>
           </div>
+
           <!-- update -->
           <div class="col-6 text-center mt-5">
-            <a
-              type="submit"
-              class="btn btn-success"
-              style="min-width: 100px"
-              ng-click="updateProducts($event)"
-              href="#product/{{form_Products.id}}/add"
-            >
+            <a type="submit" class="btn btn-success" style="min-width: 100px" ng-click="updateProducts($event)"
+              href="#product/{{form_Products.id}}/add">
               Update
             </a>
           </div>
@@ -135,16 +109,10 @@
                   <td>{{p.description}}</td>
                   <td>{{p.image}}</td>
                   <td>
-                    <a
-                      href="#products/{{p.id}}/remove"
-                      ng-click="removesProducts($event, $index)"
-                      ><i class="fa-solid fa-trash"></i
-                    ></a>
-                    <a
-                      href="#products/{{p.id}}/detail"
-                      ng-click="detailProducts($event, $index)"
-                      ><i class="fa-solid fa-pen"></i
-                    ></a>
+                    <a href="#products/{{p.id}}/remove" ng-click="removesProducts($event, $index)"><i
+                        class="fa-solid fa-trash"></i></a>
+                    <a href="#products/{{p.id}}/detail" ng-click="detailProducts($event, $index)"><i
+                        class="fa-solid fa-pen"></i></a>
                   </td>
                 </tr>
               </tbody>

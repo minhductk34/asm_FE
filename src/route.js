@@ -23,6 +23,10 @@ myApp.config(function ($routeProvider, $locationProvider) {
       templateUrl: "pages/dangKy.html",
       controller: account_Controller,
     })
+    .when("/dangXuat", {
+      templateUrl: "/trangChu",
+      controller: account_Controller,
+    })
     .when("/doiMatKhau", {
       templateUrl: "pages/doiMatKhau.html",
       controller: doiMatKhau_Controller,
@@ -70,6 +74,10 @@ myApp.config(function ($routeProvider, $locationProvider) {
     .when("/category", {
       templateUrl: "pages/category.html",
       controller: category_Controller,
+    })
+    .when("/user", {
+      templateUrl: "pages/user.html",
+      controller: user_Controller,
     })
     .when("/sanPham/detail/:id", {
       templateUrl: "pages/detailSanPham.html",

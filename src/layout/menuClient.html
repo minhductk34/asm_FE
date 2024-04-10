@@ -3,36 +3,20 @@
     <nav class="navbar navbar-expand-lg border-bottom border-dark">
       <div class="container-fluid header_dow">
         <div class="col-6">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link me-3 menu-detail"
-                  aria-current="page"
-                  href="#trangChu"
-                  >Trang chủ</a
-                >
+                <a class="nav-link me-3 menu-detail" aria-current="page" href="#trangChu">Trang chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3 menu-detail" href="#gioiThieu"
-                  >Giới thiệu</a
-                >
+                <a class="nav-link me-3 menu-detail" href="#gioiThieu">Giới thiệu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3 menu-detail" href="#sanPham"
-                  >Sản phẩm</a
-                >
+                <a class="nav-link me-3 menu-detail" href="#sanPham">Sản phẩm</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link me-3 menu-detail" href="#daMua">Đã mua</a>
@@ -42,18 +26,8 @@
         </div>
         <div class="col-5">
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              ng-model="search"
-            />
-            <a
-              class="btn btn-outline-warning"
-              type="submit"
-              href="#trangChu/search"
-            >
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" ng-model="search" />
+            <a class="btn btn-outline-warning" type="submit" href="#trangChu/search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </form>
@@ -61,11 +35,9 @@
         <div class="col-1 text-end">
           <a href="#gioHang">
             <i class="fa-solid fa-bag-shopping icon-giohang"></i>
-            <span
-              class="position-absolute start-100 translate-middle badge rounded-pill bg-danger"
-            >
-              3
-              <span class="visually-hidden">unread messages</span>
+            <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+              {{soLuongSanPham}}
+              <!-- <span class="visually-hidden">unread messages</span> -->
             </span>
           </a>
         </div>

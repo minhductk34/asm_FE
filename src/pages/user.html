@@ -1,0 +1,106 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div ng-include="'layout/menuAdmin.html'"></div>
+            </div>
+
+            <div class="col-10">
+                <h4 class="text-center mt-4 mb-5">User Manager</h4>
+
+                <form class="row g-3">
+                    <!-- id -->
+                    <div class="col-md-6">
+                        <label for="Id" class="form-label">ID</label>
+                        <input type="text" class="form-control" id="Id" ng-model="form_Users.id" readonly />
+
+                    </div>
+                    <!-- name -->
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" ng-model="form_Users.name" />
+                        <span ng-show="validate.name" style="color: red;"> Tên không được để trống</span>
+                    </div>
+                    <!-- user -->
+                    <div class="col-md-6">
+                        <label for="user" class="form-label">User</label>
+                        <input type="text" class="form-control" id="user" ng-model="form_Users.user" />
+                        <span ng-show="validate.user" style="color: red;"> UserName không được để trống</span>
+                    </div>
+                    <!-- password -->
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" ng-model="form_Users.password" />
+                        <span ng-show="validate.name" style="color: red;"> Password không được để trống</span>
+                    </div>
+                    <!-- phone number -->
+                    <div class="col-md-6">
+                        <label for="sdt" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="sdt" ng-model="form_Users.sdt" />
+                        <span ng-show="validate.sdt" style="color: red;"> Số điện thoại không được để trống</span>
+                    </div>
+                    <!-- role -->
+                    <div class="col-md-6">
+                        <label for="chucVu" class="form-label">Role</label>
+                        <select class="form-select" id="chucVu" ng-model="form_Users.chucVu">
+                            <option value="admin">Admin</option>
+                            <option value="client">Client</option>
+                        </select>
+                        <span ng-show="validate.chucVu" style="color: red;"> Chức vụ không được để trống</span>
+                    </div>
+
+
+                    <!-- add -->
+                    <div class="col-6 text-center mt-5">
+                        <a type="submit" class="btn btn-warning" style="min-width: 100px" ng-click="addUser($event)"
+                            href="#user/add">
+                            Add
+                        </a>
+                    </div>
+                    <!-- update -->
+                    <div class="col-6 text-center mt-5">
+                        <a type="submit" class="btn btn-success" style="min-width: 100px" ng-click="updateUser($event)"
+                            href="#user/{{form_Users.id}}/add">
+                            Update
+                        </a>
+                    </div>
+
+                    <!-- table -->
+                    <div class="row mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>User</th>
+                                    <th>Password</th>
+                                    <th>Phone Number</th>
+                                    <th>Role</th>
+                                    <th>Function</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="u in users">
+                                    <td>{{$index + 1}}</td>
+                                    <td>{{u.id}}</td>
+                                    <td>{{u.name}}</td>
+                                    <td>{{u.user}}</td>
+                                    <td>{{u.password}}</td>
+                                    <td>{{u.sdt}}</td>
+                                    <td>{{u.chucVu}}</td>
+                                    <td>
+                                        <a href="#users/{{u.id}}/remove" ng-click="removeUser($event, $index)"><i
+                                                class="fa-solid fa-trash"></i></a>
+                                        <a href="#users/{{u.id}}/detail" ng-click="detailUser($event, $index)"><i
+                                                class="fa-solid fa-pen"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

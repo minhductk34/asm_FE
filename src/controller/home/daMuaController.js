@@ -29,6 +29,39 @@ window.daMua_Controller = function ($scope, $rootScope, $http) {
     });
   };
 
+
+  $scope.thanhToanAll = function () {
+    console.log(123);
+    // Lặp qua danh sách sản phẩm để thanh toán từng sản phẩm
+    angular.forEach($scope.sanPham, function (product, index) {
+      let api = banHangAPI + "/" + product.id;
+
+      let form_thanhToan = {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        category: product.category,
+        description: product.description,
+        image: product.image,
+        soLuong: product.soLuong,
+        thanhTien: product.thanhTien,
+        trangThai: false,
+      };
+
+      $http.put(api, form_thanhToan)
+        .then(function () {
+          // Xóa sản phẩm khỏi giỏ hàng sau khi thanh toán
+          $scope.sanPham.splice(index, 1);
+        })
+        .catch(function (error) {
+          console.error('Lỗi khi thanh toán sản phẩm:', error);
+        });
+    });
+
+    alert("Thanh toán tất cả sản phẩm thành công");
+    window.location = "#daMua";
+  };
+
   $scope.muaLai = function (event, index) {
     event.preventDefault();
 

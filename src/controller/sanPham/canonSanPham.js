@@ -2,7 +2,7 @@ window.canon_Controller = function ($scope, $rootScope, $http) {
   $scope.canon = [];
 
   let api = productsAPI + "?category=Canon";
-
+  console.log(api);
   $http.get(api).then(function (response) {
     if (response.statusText === "OK") {
       $scope.spCanon = response.data;
